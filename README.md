@@ -1,4 +1,3 @@
-# git-cli-training
 # git CLI quick reference/practice
 
 First, fork this project within github 
