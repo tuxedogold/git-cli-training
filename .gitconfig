@@ -1,6 +1,6 @@
 
 [alias]
-    ac = !git add * && git commit -m
+    ac = !git add . && git commit -m
 	up = pull origin master
 	p = !git push
     b = !git checkout -b
