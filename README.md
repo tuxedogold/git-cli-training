@@ -153,11 +153,14 @@ Merge those changes into your branch with the pull command. You could simulate t
 Now you have the changes, check the log. This will bring in new changs on top of your commits
 
 If everything looks good, go ahead and push your branch back to the cloud
+
 `git push`
 
 
 Once your pull request is complete, delete your branch locally by first switching back to master and then running the branch command with -d
 
 `git checkout master`
+
+
 `git branch -d localBranchName`
 
