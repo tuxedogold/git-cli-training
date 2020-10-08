@@ -142,14 +142,22 @@ If this is your first push on this branch, type
 
 `git push --set-upstream origin 123-very-descriptive-branchname`
 
-Okay, at this point we are ready to make a pull-request on the server. in github/gitlabs you will see a url, you can simply click that url and fill out your info
+Okay, at this point we are ready to make a pull-request on the server. in github/gitlabs you will see a url, you can simply click that url and fill out your info. However, in azure devops you will have to browse on your own or use other utilities to do so :-)
 
-However, in azure devops you will have to browse on your own or use other utilities to do so.
+
+Okay, now lets say someone has pushed more code to origin master..
+Merge those changes into your branch with the pull command. You could simulate this by changing to master and commiting, then pushing changes
+
+`git pull origin master`
+
+Now you have the changes, check the log. This will bring in new changs on top of your commits
+
+If everything looks good, go ahead and push your branch back to the cloud
+`git push`
+
 
 Once your pull request is complete, delete your branch locally by first switching back to master and then running the branch command with -d
 
-`
-git checkout master
+`git checkout master`
+`git branch -d localBranchName`
 
-git branch -d localBranchName
-`
