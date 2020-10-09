@@ -122,6 +122,12 @@ forgot to code review prior to committing, or this code was meant for another br
 The following command will undo your last commit.
 ## do not do this if you have pushed the commit
 
+### Also: ALWAYS check your log prior to this command to make sure you are undoing YOUR commit and not someone elses.
+
+### If this scares you, it should.  If it doesn't scare you, then dont ever run the command
+
+`git reset --soft HEAD~1`
+
 now check your git status and git log. You should find your commit is not there, and you have all your changes back.
 
 Lets say you want these changes, but just not now. type
