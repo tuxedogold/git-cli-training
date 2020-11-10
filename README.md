@@ -6,8 +6,7 @@ Clone a repo to test it out
 
 `git clone git@github.com:[yourgithubprofile]/git-cli-training.git`
 
-If you haven't set up your ssh key, this won't work so try creating a key using ssh-keygen and uploading 
-your public key to github
+If you haven't set up your ssh key, you might want to go ahead and do that, then upload the public key into azure or github.
 
 `ssh-keygen -t rsa -b 4096 -C "your_email@example.com" `
 
@@ -17,7 +16,7 @@ This key authenticates you on the server. you can locate it in your user directo
 cd %UserProfile%/.ssh/
 dir
 `
-you are looking for a file that ends in .pub
+you are looking for a file that ends in .pub, take its contents and upload it to azure under user settings/ public ssh keys. On github it is under user/settings/ssh and gpg keys.
 
 
 Setup some identifying information for your commit history
